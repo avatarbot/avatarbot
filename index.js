@@ -2,9 +2,9 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 var prefix = "a!";
 const bot = client
-client.on('ready', () => {
+client.on('ready', () => 
     setInterval(changing_status, 5000);
-
+client.login("token")
     function changing_status() {
         let status = [client.users.size+" utilisateurs", "des gens taper a!help", "la AVATAR ESPORT", "Avatar_Thomas#4399"]
         let nowstat = status[Math.floor(Math.random() * status.length)]
